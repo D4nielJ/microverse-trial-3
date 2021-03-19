@@ -82,7 +82,7 @@ form h2 {
     padding: 5px;
 }
 
-.btn, .offer-button {
+.btn {
     padding: 0 20px;
     height: 40px;
     font-size: 1em;
@@ -108,15 +108,124 @@ form h2 {
 }
 
 
-#one,#two,#three{
+#one, #two, #three{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.first-offer{
+/* Features */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 4rem; 
+}
+
+.feature-item {
+    display: flex;
+    
+}
+
+.features i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+#two iframe {
+    margin-bottom: 4rem; 
+}
+
+
+.pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.offer-title {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.offer p {
+    margin-top: 15px;
+    line-height: 2rem;
+}
+
+.offer ul {
+    margin: 15px 0;
+    list-style: none;
+}
+
+.offer ul li {
+    padding: 5px 0;
+}
+
+.offer h2 {
+    margin-top: 15px;
+}
+
+.offer-button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+
+/* Offers 
+
+.pricing {
+    font-size: 1.5rem;
+}
+
+.offer{
+
   display:inline-block;
   margin: 4rem;
   border: thin solid;
+  width: calc(100% / 3);
+  
+  
 }
 
 .offer-button{
@@ -127,10 +236,11 @@ form h2 {
 }
 
 #labels{
-  background-color: grey;
+  background-color: #ddd;
   display: flex;
   justify-content: center;
   padding: 2rem;
+  font-size: 1.3rem;
 }
 
 #price-details{
@@ -138,3 +248,12 @@ form h2 {
   justify-content: center;
 
 }
+
+.price {
+    font-weight: 700;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+*/
