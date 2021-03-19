@@ -5,13 +5,14 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 body {
     background-color: #eee;
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 a {
@@ -84,8 +85,9 @@ form h2 {
 
 .btn {
     padding: 0 20px;
-    height: 40px;
-    font-size: 1em;
+    min-width: 150px;
+    line-height: 40px;
+    font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
     border: 3px black solid;
@@ -94,10 +96,15 @@ form h2 {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
+
 #submit {
     max-width: 150px;
     width: 100%;
-    height: 30px;
+    line-height: 30px;
     margin: 15px 0;
     border: 0;
     background-color: #f1c40f;
@@ -131,7 +138,7 @@ form h2 {
 
 .feature-item {
     display: flex;
-    
+    width: 100%;
 }
 
 .features i {
@@ -158,12 +165,14 @@ form h2 {
     margin-bottom: 4rem; 
 }
 
+/* offers */
 
 .pricing {
     margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 
 .offer {
@@ -183,7 +192,7 @@ form h2 {
     padding: 15px 0;
     width: 100%;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 0.8rem;
 }
 
 .offer p {
@@ -200,60 +209,39 @@ form h2 {
     padding: 5px 0;
 }
 
-.offer h2 {
-    margin-top: 15px;
-}
-
 .offer-button {
     border: 0;
-    margin: 15px 0;
+    margin: 0 0 1rem 0;
     background-color: #f1c40f;
-    font-weight: 400;
+    font-weight: 600;
 }
 
-
-/* Offers 
-
-.pricing {
-    font-size: 1.5rem;
-}
-
-.offer{
-
-  display:inline-block;
-  margin: 4rem;
-  border: thin solid;
-  width: calc(100% / 3);
-  
-  
-}
-
-.offer-button{
-  background-color: yellow;
-  display: flex;
-  justify-content: center;
-  padding:
-}
-
-#labels{
-  background-color: #ddd;
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  font-size: 1.3rem;
-}
-
-#price-details{
-  display: flex;
-  justify-content: center;
-
-}
-
-.price {
-    font-weight: 700;
-    text-align: center;
-    font-size: 3rem;
+.offer .price {
     margin-top: 1rem;
 }
 
-*/
+/* footer */
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+footer span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
